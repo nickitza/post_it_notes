@@ -1,4 +1,8 @@
-<h1>Index Of Posts</h1>
+<h1>Post-Its</h1>
+<hr />
+
+<%= link_to "New Post-It", new_note_path%>
+
 <% @notes.each do |note| %>
  <h2> <%= note.title %> </h2>
  <h5>Written by: <%= note.author %> </h5>
