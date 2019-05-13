@@ -7,4 +7,5 @@
  <h2> <%= note.title %> </h2>
  <h5>Written by: <%= note.author %> </h5>
  <%= link_to "Go To Post", note_path(note.id)%>
+ <%= link_to "Edit Post", edit_note_path(note.id) %>
 <% end %>
